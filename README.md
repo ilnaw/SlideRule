@@ -1,6 +1,6 @@
-# SlideRuler
+# SlideRule
 
-A simple silder ruler UI component
+A simple silde rule UI component
 
 ☑️Support CoreHaptics<br>
 ☑️Supports both horizontal and vertical orientations.<br>
