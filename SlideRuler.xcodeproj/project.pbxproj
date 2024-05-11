@@ -20,6 +20,11 @@
 		3E043A672BE9D49700C7DD99 /* RulerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E043A612BE9D49700C7DD99 /* RulerLayout.m */; };
 		3E043A682BE9D49700C7DD99 /* RulerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E043A622BE9D49700C7DD99 /* RulerCollectionViewCell.m */; };
 		3E043A692BE9D49700C7DD99 /* RulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E043A642BE9D49700C7DD99 /* RulerView.m */; };
+		3E06C0192BEF033800F96945 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C0182BEF033800F96945 /* WaterViewController.swift */; };
+		3E06C0202BEF45FF00F96945 /* CLWaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */; };
+		3E06C0212BEF45FF00F96945 /* CLWaterWaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */; };
+		3E06C0222BEF45FF00F96945 /* CLWaterWaveModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */; };
+		3E06C0232BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		3E043A622BE9D49700C7DD99 /* RulerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulerCollectionViewCell.m; sourceTree = "<group>"; };
 		3E043A632BE9D49700C7DD99 /* RulerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulerCollectionViewCell.h; sourceTree = "<group>"; };
 		3E043A642BE9D49700C7DD99 /* RulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulerView.m; sourceTree = "<group>"; };
+		3E06C0182BEF033800F96945 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveView.swift; sourceTree = "<group>"; };
+		3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveModel.swift; sourceTree = "<group>"; };
+		3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveModelDelegate.swift; sourceTree = "<group>"; };
+		3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLWaterWaveModel+Defaults.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,11 @@
 				3E043A5B2BE9D47B00C7DD99 /* SildeRuler */,
 				3E043A2B2BE9D46800C7DD99 /* AppDelegate.swift */,
 				3E043A2F2BE9D46800C7DD99 /* ViewController.swift */,
+				3E06C0182BEF033800F96945 /* WaterViewController.swift */,
+				3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */,
+				3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */,
+				3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */,
+				3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */,
 				3E043A5C2BE9D49600C7DD99 /* SlideRuler-Bridging-Header.h */,
 				3E043A312BE9D46800C7DD99 /* Main.storyboard */,
 				3E043A342BE9D46A00C7DD99 /* Assets.xcassets */,
@@ -287,12 +302,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E06C0202BEF45FF00F96945 /* CLWaterWaveView.swift in Sources */,
 				3E043A652BE9D49700C7DD99 /* STShakeManager.swift in Sources */,
 				3E043A662BE9D49700C7DD99 /* UIDevice+model.swift in Sources */,
 				3E043A692BE9D49700C7DD99 /* RulerView.m in Sources */,
+				3E06C0222BEF45FF00F96945 /* CLWaterWaveModelDelegate.swift in Sources */,
 				3E043A672BE9D49700C7DD99 /* RulerLayout.m in Sources */,
+				3E06C0212BEF45FF00F96945 /* CLWaterWaveModel.swift in Sources */,
+				3E06C0232BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift in Sources */,
 				3E043A682BE9D49700C7DD99 /* RulerCollectionViewCell.m in Sources */,
 				3E043A302BE9D46800C7DD99 /* ViewController.swift in Sources */,
+				3E06C0192BEF033800F96945 /* WaterViewController.swift in Sources */,
 				3E043A2C2BE9D46800C7DD99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
