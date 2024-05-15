@@ -21,10 +21,30 @@
 		3E043A682BE9D49700C7DD99 /* RulerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E043A622BE9D49700C7DD99 /* RulerCollectionViewCell.m */; };
 		3E043A692BE9D49700C7DD99 /* RulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E043A642BE9D49700C7DD99 /* RulerView.m */; };
 		3E06C0192BEF033800F96945 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C0182BEF033800F96945 /* WaterViewController.swift */; };
-		3E06C0202BEF45FF00F96945 /* CLWaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */; };
-		3E06C0212BEF45FF00F96945 /* CLWaterWaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */; };
-		3E06C0222BEF45FF00F96945 /* CLWaterWaveModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */; };
-		3E06C0232BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */; };
+		3E79F3232BF3487F006C31D1 /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79F3222BF3487F006C31D1 /* RippleView.swift */; };
+		3E79F3262BF375EA006C31D1 /* YLImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79F3242BF375E9006C31D1 /* YLImageProvider.swift */; };
+		3E79F3272BF375EA006C31D1 /* TestLottieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79F3252BF375EA006C31D1 /* TestLottieVC.swift */; };
+		3E79F33E2BF3764A006C31D1 /* toushiqian2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3292BF3764A006C31D1 /* toushiqian2.png */; };
+		3E79F33F2BF3764A006C31D1 /* toushihou2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32A2BF3764A006C31D1 /* toushihou2.png */; };
+		3E79F3402BF3764A006C31D1 /* biyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32B2BF3764A006C31D1 /* biyan.png */; };
+		3E79F3412BF3764A006C31D1 /* bizi_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32C2BF3764A006C31D1 /* bizi_0.png */; };
+		3E79F3422BF3764A006C31D1 /* bizi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32D2BF3764A006C31D1 /* bizi.png */; };
+		3E79F3432BF3764A006C31D1 /* lian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32E2BF3764A006C31D1 /* lian.jpg */; };
+		3E79F3442BF3764A006C31D1 /* meimao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F32F2BF3764A006C31D1 /* meimao.png */; };
+		3E79F3452BF3764A006C31D1 /* shenti.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3302BF3764A006C31D1 /* shenti.png */; };
+		3E79F3462BF3764A006C31D1 /* toushihou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3312BF3764A006C31D1 /* toushihou.jpg */; };
+		3E79F3472BF3764A006C31D1 /* toushiqian.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3322BF3764A006C31D1 /* toushiqian.png */; };
+		3E79F3482BF3764A006C31D1 /* weixiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3332BF3764A006C31D1 /* weixiao.png */; };
+		3E79F3492BF3764A006C31D1 /* youshou.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3342BF3764A006C31D1 /* youshou.png */; };
+		3E79F34A2BF3764A006C31D1 /* youtui.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3352BF3764A006C31D1 /* youtui.png */; };
+		3E79F34B2BF3764A006C31D1 /* zhangzui.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3362BF3764A006C31D1 /* zhangzui.png */; };
+		3E79F34C2BF3764A006C31D1 /* zhengyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3372BF3764A006C31D1 /* zhengyan.png */; };
+		3E79F34D2BF3764A006C31D1 /* zuoshou1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3382BF3764A006C31D1 /* zuoshou1.png */; };
+		3E79F34E2BF3764A006C31D1 /* zuoshou2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F3392BF3764A006C31D1 /* zuoshou2.png */; };
+		3E79F34F2BF3764A006C31D1 /* zuoshou3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F33A2BF3764A006C31D1 /* zuoshou3.png */; };
+		3E79F3502BF3764A006C31D1 /* zuoshou4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F33B2BF3764A006C31D1 /* zuoshou4.png */; };
+		3E79F3512BF3764A006C31D1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E79F33D2BF3764A006C31D1 /* data.json */; };
+		DE9C119D614D1A46387A16D3 /* Pods_SlideRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FC2A9D004CFBE8BA9540CB /* Pods_SlideRuler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31FC2A9D004CFBE8BA9540CB /* Pods_SlideRuler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideRuler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E043A282BE9D46800C7DD99 /* SlideRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E043A2B2BE9D46800C7DD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E043A2F2BE9D46800C7DD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +88,31 @@
 		3E043A632BE9D49700C7DD99 /* RulerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulerCollectionViewCell.h; sourceTree = "<group>"; };
 		3E043A642BE9D49700C7DD99 /* RulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulerView.m; sourceTree = "<group>"; };
 		3E06C0182BEF033800F96945 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
-		3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveView.swift; sourceTree = "<group>"; };
-		3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveModel.swift; sourceTree = "<group>"; };
-		3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterWaveModelDelegate.swift; sourceTree = "<group>"; };
-		3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLWaterWaveModel+Defaults.swift"; sourceTree = "<group>"; };
+		3E79F3222BF3487F006C31D1 /* RippleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
+		3E79F3242BF375E9006C31D1 /* YLImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLImageProvider.swift; sourceTree = "<group>"; };
+		3E79F3252BF375EA006C31D1 /* TestLottieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLottieVC.swift; sourceTree = "<group>"; };
+		3E79F3292BF3764A006C31D1 /* toushiqian2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toushiqian2.png; sourceTree = "<group>"; };
+		3E79F32A2BF3764A006C31D1 /* toushihou2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toushihou2.png; sourceTree = "<group>"; };
+		3E79F32B2BF3764A006C31D1 /* biyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biyan.png; sourceTree = "<group>"; };
+		3E79F32C2BF3764A006C31D1 /* bizi_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bizi_0.png; sourceTree = "<group>"; };
+		3E79F32D2BF3764A006C31D1 /* bizi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bizi.png; sourceTree = "<group>"; };
+		3E79F32E2BF3764A006C31D1 /* lian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lian.jpg; sourceTree = "<group>"; };
+		3E79F32F2BF3764A006C31D1 /* meimao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meimao.png; sourceTree = "<group>"; };
+		3E79F3302BF3764A006C31D1 /* shenti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shenti.png; sourceTree = "<group>"; };
+		3E79F3312BF3764A006C31D1 /* toushihou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toushihou.jpg; sourceTree = "<group>"; };
+		3E79F3322BF3764A006C31D1 /* toushiqian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toushiqian.png; sourceTree = "<group>"; };
+		3E79F3332BF3764A006C31D1 /* weixiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixiao.png; sourceTree = "<group>"; };
+		3E79F3342BF3764A006C31D1 /* youshou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youshou.png; sourceTree = "<group>"; };
+		3E79F3352BF3764A006C31D1 /* youtui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtui.png; sourceTree = "<group>"; };
+		3E79F3362BF3764A006C31D1 /* zhangzui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhangzui.png; sourceTree = "<group>"; };
+		3E79F3372BF3764A006C31D1 /* zhengyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhengyan.png; sourceTree = "<group>"; };
+		3E79F3382BF3764A006C31D1 /* zuoshou1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuoshou1.png; sourceTree = "<group>"; };
+		3E79F3392BF3764A006C31D1 /* zuoshou2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuoshou2.png; sourceTree = "<group>"; };
+		3E79F33A2BF3764A006C31D1 /* zuoshou3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuoshou3.png; sourceTree = "<group>"; };
+		3E79F33B2BF3764A006C31D1 /* zuoshou4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuoshou4.png; sourceTree = "<group>"; };
+		3E79F33D2BF3764A006C31D1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		AFC1D2E48FE8A45D6FAC5211 /* Pods-SlideRuler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideRuler.debug.xcconfig"; path = "Target Support Files/Pods-SlideRuler/Pods-SlideRuler.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A318951F68594B2D9D010A /* Pods-SlideRuler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideRuler.release.xcconfig"; path = "Target Support Files/Pods-SlideRuler/Pods-SlideRuler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9C119D614D1A46387A16D3 /* Pods_SlideRuler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +148,8 @@
 				3E043A412BE9D46B00C7DD99 /* SlideRulerTests */,
 				3E043A4B2BE9D46B00C7DD99 /* SlideRulerUITests */,
 				3E043A292BE9D46800C7DD99 /* Products */,
+				66C8561BE421CA2661A67DA7 /* Pods */,
+				4B872DED95A6DD97FAF29D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,10 +170,10 @@
 				3E043A2B2BE9D46800C7DD99 /* AppDelegate.swift */,
 				3E043A2F2BE9D46800C7DD99 /* ViewController.swift */,
 				3E06C0182BEF033800F96945 /* WaterViewController.swift */,
-				3E06C01D2BEF45FE00F96945 /* CLWaterWaveModel.swift */,
-				3E06C01F2BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift */,
-				3E06C01E2BEF45FE00F96945 /* CLWaterWaveModelDelegate.swift */,
-				3E06C01C2BEF45FE00F96945 /* CLWaterWaveView.swift */,
+				3E79F3252BF375EA006C31D1 /* TestLottieVC.swift */,
+				3E79F3242BF375E9006C31D1 /* YLImageProvider.swift */,
+				3E79F3282BF37639006C31D1 /* LottieRes */,
+				3E79F3222BF3487F006C31D1 /* RippleView.swift */,
 				3E043A5C2BE9D49600C7DD99 /* SlideRuler-Bridging-Header.h */,
 				3E043A312BE9D46800C7DD99 /* Main.storyboard */,
 				3E043A342BE9D46A00C7DD99 /* Assets.xcassets */,
@@ -170,6 +215,58 @@
 			path = SildeRuler;
 			sourceTree = "<group>";
 		};
+		3E79F3282BF37639006C31D1 /* LottieRes */ = {
+			isa = PBXGroup;
+			children = (
+				3E79F33D2BF3764A006C31D1 /* data.json */,
+				3E79F33C2BF3764A006C31D1 /* images */,
+				3E79F32A2BF3764A006C31D1 /* toushihou2.png */,
+				3E79F3292BF3764A006C31D1 /* toushiqian2.png */,
+			);
+			path = LottieRes;
+			sourceTree = "<group>";
+		};
+		3E79F33C2BF3764A006C31D1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3E79F32B2BF3764A006C31D1 /* biyan.png */,
+				3E79F32C2BF3764A006C31D1 /* bizi_0.png */,
+				3E79F32D2BF3764A006C31D1 /* bizi.png */,
+				3E79F32E2BF3764A006C31D1 /* lian.jpg */,
+				3E79F32F2BF3764A006C31D1 /* meimao.png */,
+				3E79F3302BF3764A006C31D1 /* shenti.png */,
+				3E79F3312BF3764A006C31D1 /* toushihou.jpg */,
+				3E79F3322BF3764A006C31D1 /* toushiqian.png */,
+				3E79F3332BF3764A006C31D1 /* weixiao.png */,
+				3E79F3342BF3764A006C31D1 /* youshou.png */,
+				3E79F3352BF3764A006C31D1 /* youtui.png */,
+				3E79F3362BF3764A006C31D1 /* zhangzui.png */,
+				3E79F3372BF3764A006C31D1 /* zhengyan.png */,
+				3E79F3382BF3764A006C31D1 /* zuoshou1.png */,
+				3E79F3392BF3764A006C31D1 /* zuoshou2.png */,
+				3E79F33A2BF3764A006C31D1 /* zuoshou3.png */,
+				3E79F33B2BF3764A006C31D1 /* zuoshou4.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		4B872DED95A6DD97FAF29D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31FC2A9D004CFBE8BA9540CB /* Pods_SlideRuler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66C8561BE421CA2661A67DA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFC1D2E48FE8A45D6FAC5211 /* Pods-SlideRuler.debug.xcconfig */,
+				B8A318951F68594B2D9D010A /* Pods-SlideRuler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E043A522BE9D46B00C7DD99 /* Build configuration list for PBXNativeTarget "SlideRuler" */;
 			buildPhases = (
+				C6C37A1496B6E90A1593E7F2 /* [CP] Check Pods Manifest.lock */,
 				3E043A242BE9D46800C7DD99 /* Sources */,
 				3E043A252BE9D46800C7DD99 /* Frameworks */,
 				3E043A262BE9D46800C7DD99 /* Resources */,
+				E0950229B783AE34729BABA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,9 +374,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E79F3462BF3764A006C31D1 /* toushihou.jpg in Resources */,
+				3E79F3512BF3764A006C31D1 /* data.json in Resources */,
+				3E79F3452BF3764A006C31D1 /* shenti.png in Resources */,
+				3E79F34B2BF3764A006C31D1 /* zhangzui.png in Resources */,
+				3E79F33F2BF3764A006C31D1 /* toushihou2.png in Resources */,
+				3E79F34F2BF3764A006C31D1 /* zuoshou3.png in Resources */,
+				3E79F3442BF3764A006C31D1 /* meimao.png in Resources */,
+				3E79F3502BF3764A006C31D1 /* zuoshou4.png in Resources */,
+				3E79F3492BF3764A006C31D1 /* youshou.png in Resources */,
+				3E79F3422BF3764A006C31D1 /* bizi.png in Resources */,
+				3E79F3472BF3764A006C31D1 /* toushiqian.png in Resources */,
 				3E043A352BE9D46A00C7DD99 /* Assets.xcassets in Resources */,
 				3E043A382BE9D46A00C7DD99 /* Base in Resources */,
+				3E79F34E2BF3764A006C31D1 /* zuoshou2.png in Resources */,
+				3E79F3432BF3764A006C31D1 /* lian.jpg in Resources */,
+				3E79F34D2BF3764A006C31D1 /* zuoshou1.png in Resources */,
+				3E79F34C2BF3764A006C31D1 /* zhengyan.png in Resources */,
+				3E79F33E2BF3764A006C31D1 /* toushiqian2.png in Resources */,
+				3E79F3482BF3764A006C31D1 /* weixiao.png in Resources */,
+				3E79F34A2BF3764A006C31D1 /* youtui.png in Resources */,
 				3E043A332BE9D46800C7DD99 /* Base in Resources */,
+				3E79F3412BF3764A006C31D1 /* bizi_0.png in Resources */,
+				3E79F3402BF3764A006C31D1 /* biyan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,21 +416,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C6C37A1496B6E90A1593E7F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideRuler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0950229B783AE34729BABA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlideRuler/Pods-SlideRuler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlideRuler/Pods-SlideRuler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideRuler/Pods-SlideRuler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E043A242BE9D46800C7DD99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E06C0202BEF45FF00F96945 /* CLWaterWaveView.swift in Sources */,
 				3E043A652BE9D49700C7DD99 /* STShakeManager.swift in Sources */,
 				3E043A662BE9D49700C7DD99 /* UIDevice+model.swift in Sources */,
 				3E043A692BE9D49700C7DD99 /* RulerView.m in Sources */,
-				3E06C0222BEF45FF00F96945 /* CLWaterWaveModelDelegate.swift in Sources */,
 				3E043A672BE9D49700C7DD99 /* RulerLayout.m in Sources */,
-				3E06C0212BEF45FF00F96945 /* CLWaterWaveModel.swift in Sources */,
-				3E06C0232BEF45FF00F96945 /* CLWaterWaveModel+Defaults.swift in Sources */,
 				3E043A682BE9D49700C7DD99 /* RulerCollectionViewCell.m in Sources */,
 				3E043A302BE9D46800C7DD99 /* ViewController.swift in Sources */,
+				3E79F3232BF3487F006C31D1 /* RippleView.swift in Sources */,
+				3E79F3262BF375EA006C31D1 /* YLImageProvider.swift in Sources */,
+				3E79F3272BF375EA006C31D1 /* TestLottieVC.swift in Sources */,
 				3E06C0192BEF033800F96945 /* WaterViewController.swift in Sources */,
 				3E043A2C2BE9D46800C7DD99 /* AppDelegate.swift in Sources */,
 			);
@@ -421,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -478,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -490,6 +650,7 @@
 		};
 		3E043A532BE9D46B00C7DD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC1D2E48FE8A45D6FAC5211 /* Pods-SlideRuler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,6 +658,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D8KF282UZZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlideRuler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,6 +666,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +684,7 @@
 		};
 		3E043A542BE9D46B00C7DD99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A318951F68594B2D9D010A /* Pods-SlideRuler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D8KF282UZZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlideRuler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -535,6 +700,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

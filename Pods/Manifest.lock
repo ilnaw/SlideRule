@@ -1,0 +1,30 @@
+PODS:
+  - CLWaterWaveView (1.2)
+  - CYLTabBarController (1.24.2):
+    - CYLTabBarController/Core (= 1.24.2)
+  - CYLTabBarController/Core (1.24.2)
+  - lottie-ios (4.4.1)
+  - SnapKit (5.7.1)
+
+DEPENDENCIES:
+  - CLWaterWaveView
+  - CYLTabBarController (~> 1.24.0)
+  - lottie-ios
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CLWaterWaveView
+    - CYLTabBarController
+    - lottie-ios
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CLWaterWaveView: 786d7341bd77af6fc1b03da69c21970afb8fa7f7
+  CYLTabBarController: e7440ad0992edfb8ac14a6c793f43aa636c5cba5
+  lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+
+PODFILE CHECKSUM: a62d1e17400f27f369234649e146ee19419fa499
+
+COCOAPODS: 1.15.2

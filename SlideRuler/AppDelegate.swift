@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let vc = WaterViewController()
+        let vc = TestLottieVC()
         let nav = UINavigationController(rootViewController: vc)
         window = UIWindow()
         window?.frame = UIScreen.main.bounds

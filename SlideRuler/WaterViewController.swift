@@ -6,6 +6,33 @@
 //
 
 import Foundation
+import CLWaterWaveView
+
+
+class TrapezoidView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupMask()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupMask()
+    }
+    
+    private func setupMask() {
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: bounds.minX, y: bounds.maxY))
+        path.addLine(to: CGPoint(x: bounds.maxX * 0.2, y: bounds.minY))
+        path.addLine(to: CGPoint(x: bounds.maxX * 0.8, y: bounds.minY))
+        path.addLine(to: CGPoint(x: bounds.maxX, y: bounds.maxY))
+        path.close()
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        layer.mask = maskLayer
+    }
+}
 
 class WaterViewController: UIViewController{
     
@@ -17,29 +44,32 @@ class WaterViewController: UIViewController{
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        let bg = UIView(frame: CGRect(x: 100, y: 100, width: 150, height: 150))
+        let bg = TrapezoidView(frame: CGRect(x: 100, y: 100, width: 150, height: 150))
         bg.backgroundColor = UIColor.blue.withAlphaComponent(0.1)
+//        bg.clipsToBounds = true
         view.addSubview(bg)
         
-        wave_1 = CLWaterWaveView(frame: CGRect(x: 100, y: 100, width: 150, height: 150))
+        wave_1 = CLWaterWaveView()
+        wave_1.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         wave_1.backgroundColor = UIColor.blue.withAlphaComponent(0.6)
         wave_1.amplitude = 12
         wave_1.speed = 0.02
         wave_1.angularVelocity = 1
         wave_1.depth = progress
         
-        view.addSubview(wave_1)
+        bg.addSubview(wave_1)
 
         wave_1.startAnimation()
         
-        wave_2 = CLWaterWaveView(frame: CGRect(x: 100, y: 100, width: 150, height: 150))
+        wave_2 = CLWaterWaveView()
+        wave_2.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         wave_2.backgroundColor = UIColor.blue.withAlphaComponent(0.4)
         wave_2.amplitude = 10
         wave_2.speed = 0.03
         wave_2.angularVelocity = 0.8
         wave_2.depth = progress
 
-        view.addSubview(wave_2)
+        bg.addSubview(wave_2)
         wave_2.startAnimation()
         
         let button = UIButton(type: .system)
@@ -47,6 +77,10 @@ class WaterViewController: UIViewController{
         button.addTarget(self, action: #selector(start), for: .touchUpInside)
         view.addSubview(button)
         button.frame = CGRect(x: 200, y: 400, width: 100, height: 40)
+        
+        let rview = RippleView(frame: CGRect(x: 250, y: 250, width: 100, height: 100))
+        rview.backgroundColor = UIColor.white
+        view.addSubview(rview)
     }
     
     var displayLink: CADisplayLink?
