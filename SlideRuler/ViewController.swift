@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         hRuler.delegate = self
         
         let config = RulerConfig()
+        config.inches = true;
         //刻度高度
         config.shortScaleLength = 20
         config.longScaleLength = 40
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
         //选中
         config.selectionEnable = true;
         //数字顺序相反
-        config.reverse = true;
+        config.reverse = false;
         config.infiniteLoop = false;
         
         hRuler.rulerConfig = config;
@@ -84,6 +85,7 @@ class ViewController: UIViewController {
         hRuler.delegate = self
         
         let config = RulerConfig()
+        config.inches = false;
         //刻度高度
         config.shortScaleLength = 17
         config.longScaleLength = 23
