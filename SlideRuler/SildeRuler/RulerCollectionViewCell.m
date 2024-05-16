@@ -35,26 +35,15 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-<<<<<<< HEAD
-    if (self.index % 10 == 0) {
-        NSString *text = @"";
-        if (self.rulerConfig.isDecimal) {
-            NSInteger showIndex = self.index/10 + self.rulerConfig.min;
-=======
     if (self.index % self.rulerConfig.separator == 0) {
         NSString *text = @"";
         if (self.rulerConfig.isDecimal) {
             NSInteger showIndex = self.index/self.rulerConfig.separator + self.rulerConfig.min;
->>>>>>> 9896d7c... 新增英尺逻辑
             if (self.rulerConfig.reverse) {
                 showIndex = self.rulerConfig.max - showIndex + self.rulerConfig.min;
                 text = [NSString stringWithFormat:@"%ld", showIndex];
             } else {
-<<<<<<< HEAD
-                text = [NSString stringWithFormat:@"%ld", self.index/10 + self.rulerConfig.min];
-=======
                 text = [NSString stringWithFormat:@"%ld", self.index/self.rulerConfig.separator + self.rulerConfig.min];
->>>>>>> 9896d7c... 新增英尺逻辑
             }
         } else {
             NSInteger showIndex = self.index + self.rulerConfig.min;

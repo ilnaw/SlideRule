@@ -18,6 +18,13 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 @implementation RulerConfig
 
 #pragma mark - 默认设置
+
+- (instancetype)init{
+    self = [super init];
+    self.separator = 10;
+    return self;
+}
+
 + (instancetype)defaultConfig {
     RulerConfig *config = [[RulerConfig alloc] init];
     //刻度高度
@@ -51,9 +58,18 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 - (void)setInches:(BOOL)inches{
     _inches = inches;
     if (inches){
+        _isDecimal = true;
         _separator = 12;
     }else{
         _separator = 10;
+    }
+}
+
+- (void)setIsDecimal:(BOOL)isDecimal{
+    if (_inches){
+        _isDecimal = true;
+    }else{
+        _isDecimal = isDecimal;
     }
 }
 
@@ -63,7 +79,9 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 
 @property (nonatomic, strong) RulerLayout *rulerLayout;
 @property (nonatomic, strong) UICollectionView *rulerCollectionView;                        /**< 刻度尺实际实现视图  */
-@property (nonatomic, strong) UIImageView *indicatorView;                                   /**< 指示器视图  */
+@property (nonatomic, strong) UIImageView *indicatorView;
+@property (nonatomic, strong) UIImageView *indicatorDot;
+/**< 指示器视图  */
 //layer层，渐变layer
 @property (nonatomic, strong) CAGradientLayer *startGradientLayer;
 @property (nonatomic, strong) CAGradientLayer *endGradientLayer;
@@ -139,7 +157,16 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
     [self centerPointView];
     self.indicatorView.backgroundColor = self.rulerConfig.pointColor;
     self.indicatorView.layer.cornerRadius = self.rulerConfig.pointSize.width/2.0;
+    self.indicatorDot = [[UIImageView alloc] init];
+    self.indicatorDot.frame = CGRectMake(0, 0, 14, 14);
+    self.indicatorDot.backgroundColor = self.rulerConfig.pointColor;
+    self.indicatorDot.layer.cornerRadius = 7;
+  
+
+    [self.indicatorView addSubview:self.indicatorDot];
     [self addSubview:self.indicatorView];
+    [self centerPointView];
+
     
     //默认选中 偏移 = 指定数值 * (cell宽 + 刻度之间的距离) - 默认偏移 + cell宽的一半
     double offset = 0;
@@ -206,8 +233,10 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 - (void)centerPointView {
     if (kDirectionHorizontal) {
         self.indicatorView.frame = CGRectMake((CGRectGetWidth(self.frame) - self.rulerConfig.pointSize.width)/2.0, self.rulerConfig.pointStart, self.rulerConfig.pointSize.width, self.rulerConfig.pointSize.height);
+        self.indicatorDot.center = CGPointMake(self.rulerConfig.pointSize.width/2.0, self.rulerConfig.pointSize.height/2.0);
     } else {
         self.indicatorView.frame = CGRectMake(self.rulerConfig.pointStart, (CGRectGetHeight(self.frame) - self.rulerConfig.pointSize.width)/2.0, self.rulerConfig.pointSize.height, self.rulerConfig.pointSize.width);
+        self.indicatorDot.center = CGPointMake(self.rulerConfig.pointSize.height/2.0, self.rulerConfig.pointSize.width/2.0);
     }
 }
 
@@ -386,7 +415,8 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
             if (i >= 0 && i < self.rulerLayout.actualLength) {
                 NSInteger hiddenIndex = i + self.scrollLoop * self.rulerLayout.actualLength;
                 RulerCollectionViewCell *cell = (RulerCollectionViewCell *)[self.rulerCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:hiddenIndex inSection:0]];
-                [cell makeCellHiddenText];
+                //隐藏选中附近的cell
+//                [cell makeCellHiddenText];
             }
         }
         
