@@ -48,6 +48,15 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
     return config;
 }
 
+- (void)setInches:(BOOL)inches{
+    _inches = inches;
+    if (inches){
+        _separator = 12;
+    }else{
+        _separator = 10;
+    }
+}
+
 @end
 
 @interface RulerView () <UICollectionViewDataSource, UICollectionViewDelegate>
@@ -149,11 +158,11 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
     if (activeSelectionNumber >= 0) {
         if (self.rulerConfig.isDecimal) {
             //偏移计算：(单个刻度尺宽度 + 刻度尺间距) * 总刻度 - 起始偏移 + 最后一个刻度宽度 / 2.0
-            offset = activeSelectionNumber * 10 * (self.rulerConfig.scaleWidth + self.rulerConfig.distanceBetweenScale) - contentInset + (self.rulerConfig.scaleWidth / 2.0);
+            offset = activeSelectionNumber * self.rulerConfig.separator * (self.rulerConfig.scaleWidth + self.rulerConfig.distanceBetweenScale) - contentInset + (self.rulerConfig.scaleWidth / 2.0);
             //检测数字是否符合条件
-            NSString *defaultValue = [NSString stringWithFormat:@"%lf", activeSelectionNumber * 10];
+            NSString *defaultValue = [NSString stringWithFormat:@"%lf", activeSelectionNumber * self.rulerConfig.separator];
             if ([RulerView isInt:defaultValue]) {
-                self.selectIndex = activeSelectionNumber * 10;
+                self.selectIndex = activeSelectionNumber * self.rulerConfig.separator;
                 suitableNumber = YES;
             }
         } else {
@@ -233,7 +242,7 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
         NSInteger totalCount = 0;
         if (self.rulerConfig.isDecimal) {
             //如果是一位小数类型，则数据扩大10倍
-            totalCount = items * 10 + 1;
+            totalCount = items * self.rulerConfig.separator + 1;
         } else {
             totalCount = items + 1;
         }
@@ -308,9 +317,10 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
     //判断是否是小数
     if (self.rulerConfig.isDecimal) {
         if (self.rulerConfig.reverse) {
-            value = self.rulerConfig.max - (index * 1.0 / 10.0 + self.rulerConfig.min) + self.rulerConfig.min;
+            //WLTODO
+            value = self.rulerConfig.max - (index * 1.0 / self.rulerConfig.separator + self.rulerConfig.min) + self.rulerConfig.min;
         } else {
-            value = index * 1.0 / 10.0 + self.rulerConfig.min;
+            value = index * 1.0 / self.rulerConfig.separator + self.rulerConfig.min;
         }
     } else {
         if (self.rulerConfig.reverse) {
@@ -369,8 +379,8 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 
 - (void)selectCell {
     if (self.rulerConfig.selectionEnable) {
-        NSInteger min = self.selectIndex - 5;
-        NSInteger max = self.selectIndex + 5;
+        NSInteger min = self.selectIndex - (self.rulerConfig.separator/2);
+        NSInteger max = self.selectIndex + (self.rulerConfig.separator/2);
         
         for (NSInteger i=min; i<=max; i++) {
             if (i >= 0 && i < self.rulerLayout.actualLength) {
@@ -388,8 +398,8 @@ static NSString *const rulerCollectionViewCellIdentifier = @"rulerCollectionView
 
 - (void)resetCell {
     if (self.rulerConfig.selectionEnable) {
-        NSInteger min = self.selectIndex - 5;
-        NSInteger max = self.selectIndex + 5;
+        NSInteger min = self.selectIndex - (self.rulerConfig.separator/2);
+        NSInteger max = self.selectIndex + (self.rulerConfig.separator/2);
         for (NSInteger i=min; i<=max; i++) {
             if (i >= 0 && i < self.rulerLayout.actualLength) {
                 NSInteger index = i + self.scrollLoop * self.rulerLayout.actualLength;

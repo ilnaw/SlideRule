@@ -35,15 +35,26 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
+<<<<<<< HEAD
     if (self.index % 10 == 0) {
         NSString *text = @"";
         if (self.rulerConfig.isDecimal) {
             NSInteger showIndex = self.index/10 + self.rulerConfig.min;
+=======
+    if (self.index % self.rulerConfig.separator == 0) {
+        NSString *text = @"";
+        if (self.rulerConfig.isDecimal) {
+            NSInteger showIndex = self.index/self.rulerConfig.separator + self.rulerConfig.min;
+>>>>>>> 9896d7c... 新增英尺逻辑
             if (self.rulerConfig.reverse) {
                 showIndex = self.rulerConfig.max - showIndex + self.rulerConfig.min;
                 text = [NSString stringWithFormat:@"%ld", showIndex];
             } else {
+<<<<<<< HEAD
                 text = [NSString stringWithFormat:@"%ld", self.index/10 + self.rulerConfig.min];
+=======
+                text = [NSString stringWithFormat:@"%ld", self.index/self.rulerConfig.separator + self.rulerConfig.min];
+>>>>>>> 9896d7c... 新增英尺逻辑
             }
         } else {
             NSInteger showIndex = self.index + self.rulerConfig.min;
@@ -94,8 +105,8 @@
     [self.selectTextLayer removeFromSuperlayer];
     
     //刻度尺
-    CGFloat length = ((self.index % 5 == 0) ? self.rulerConfig.longScaleLength : self.rulerConfig.shortScaleLength);
-    CGFloat start = ((self.index % 5 == 0) ? self.rulerConfig.longScaleStart : self.rulerConfig.shortScaleStart);
+    CGFloat length = ((self.index % (self.rulerConfig.separator/2) == 0) ? self.rulerConfig.longScaleLength : self.rulerConfig.shortScaleLength);
+    CGFloat start = ((self.index % (self.rulerConfig.separator/2) == 0) ? self.rulerConfig.longScaleStart : self.rulerConfig.shortScaleStart);
     self.ruleImageView.frame = kHorizontalCell ? CGRectMake(0, start, self.rulerConfig.scaleWidth, length) : CGRectMake(start, 0, length, self.rulerConfig.scaleWidth);
     self.ruleImageView.layer.cornerRadius = self.rulerConfig.scaleWidth/2.0;
     self.ruleImageView.backgroundColor = self.rulerConfig.scaleColor;
@@ -107,12 +118,21 @@
     self.selectTextLayer = nil;
     NSString *text = @"";
     if (self.rulerConfig.isDecimal) {
-        double showIndex = self.index/10.0 + self.rulerConfig.min;
+        double showIndex = self.index/(CGFloat)self.rulerConfig.separator + self.rulerConfig.min;
         if (self.rulerConfig.reverse) {
             showIndex = self.rulerConfig.max - showIndex + self.rulerConfig.min;
             text = [self notRounding:showIndex afterPoint:1];
         } else {
-            text = [self notRounding:self.index/10.0 + self.rulerConfig.min afterPoint:1];
+            NSLog([NSString stringWithFormat:@"%ld",self.index]);
+            if (self.rulerConfig.inches){
+                if (self.index % 12 == 0){
+                    text = [NSString stringWithFormat:@"%ld'",self.rulerConfig.min + self.index/12];
+                }else{
+                    text = [NSString stringWithFormat:@"%ld'%ld''",self.rulerConfig.min + self.index/12,self.index%12];
+                }
+            }else{
+                text = [self notRounding:self.index/(CGFloat)self.rulerConfig.separator + self.rulerConfig.min afterPoint:1];
+            }
         }
     } else {
         NSInteger showIndex = self.index + self.rulerConfig.min;
@@ -192,9 +212,9 @@
     
     while (num > 0) {
         [maxNumberString appendFormat:@"9"];
-        num = num / 10;
+        num = num / self.rulerConfig.separator;
     }
-    
+    NSLog([NSString stringWithFormat:@"MAX: %@",maxNumberString]);
     return maxNumberString;
 }
 

@@ -39,8 +39,12 @@
 @property (nonatomic, assign) NSInteger max;                                    /**< 最大值  */
 @property (nonatomic, assign) NSInteger min;                                    /**< 最小值  */
 @property (nonatomic, assign) double defaultNumber;                             /**< 默认值  */
-@property (nonatomic, assign) NSInteger offset;                                 /**< 每次偏移的刻度尺单位  */
+@property (nonatomic, assign) NSInteger offset;                                 /**< 每次偏移的刻度尺单位
+                                                                                 */
+@property (nonatomic, assign) NSInteger separator;                              /**< 划分刻度  */
+
 //选项
+@property (nonatomic, assign) BOOL inches;                                      /**< 英尺单位  */
 @property (nonatomic, assign) BOOL isDecimal;                                   /**< 保留一位小数类型  */
 @property (nonatomic, assign) BOOL selectionEnable;                             /**< 是否允许选中  */
 @property (nonatomic, assign) BOOL useGradient;                                 /**< 是否使用渐变色  */
