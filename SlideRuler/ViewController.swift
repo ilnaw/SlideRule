@@ -26,30 +26,31 @@ class ViewController: UIViewController {
     
     func setupRulerH(){
         let hRuler = RulerView.init(frame: CGRect(x: 20, y: 100, width: UIScreen.main.bounds.size.width - 40, height: 200))
-        hRuler.backgroundColor = .clear
+        hRuler.backgroundColor = UIColor.white
         hRuler.delegate = self
         
         let config = RulerConfig()
         //刻度高度
-        config.shortScaleLength = 17
-        config.longScaleLength = 23
+        config.shortScaleLength = 20
+        config.longScaleLength = 40
         //刻度宽度
         config.scaleWidth = 1
         //刻度起始位置
         config.shortScaleStart = 80 //x位置
-        config.longScaleStart = 74 //x位置
+        config.longScaleStart = 70 //x位置
         //刻度颜色
         config.scaleColor = UIColor.gray
         //刻度之间的距离
-        config.distanceBetweenScale = 5
+        config.distanceBetweenScale = 10
         //刻度距离数字的距离
-        config.distanceFromScaleToNumber = 13
+        config.distanceFromScaleToNumber = 20
         //指示视图属性设置
-        config.pointSize = CGSizeMake(1.5, 30)
+        config.pointSize = CGSizeMake(4, 40)
         config.pointColor = UIColor.black
+//        config.pointStart = 10
         //        config.pointColor = .red
         
-        config.pointStart = 65
+        config.pointStart = 70
         //文字属性
         config.numberFont = .systemFont(ofSize: 11)
         config.numberColor = UIColor.gray
@@ -60,12 +61,12 @@ class ViewController: UIViewController {
         config.numberDirection = .numberBottom;
         
         //取值范围
-        config.max = 230;
-        config.min = 10;
+        config.max = 8;
+        config.min = 3;
         //默认值
-        config.defaultNumber = 160.0;
+        config.defaultNumber = 4;
         //使用小数类型
-        config.isDecimal = false;
+        config.isDecimal = true;
         //选中
         config.selectionEnable = true;
         //数字顺序相反
@@ -98,7 +99,7 @@ class ViewController: UIViewController {
         //刻度距离数字的距离
         config.distanceFromScaleToNumber = 13
         //指示视图属性设置
-        config.pointSize = CGSizeMake(1.5, 30)
+        config.pointSize = CGSizeMake(4, 30)
         config.pointColor = UIColor.black
         //        config.pointColor = .red
         

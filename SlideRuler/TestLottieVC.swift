@@ -78,9 +78,9 @@ class TestLottieVC: UIViewController{
     
     @objc func nextAction(){
         
-        let image = UIImage(named: "toushihou2")
-        let image2 = UIImage(named: "toushiqian2")
-        provider.refreshImageReplacement(imageReplacement: ["toushihou":image!,"toushiqian":image2!])
+        let image = UIImage(named: "toushihou3")
+        let image2 = UIImage(named: "toushiqian3")
+        provider.refreshImageReplacement(imageReplacement: ["toushihou.png":image!,"toushiqian.png":image2!])
         animationView.imageProvider =  provider
         animationView.reloadImages()
         

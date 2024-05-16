@@ -35,15 +35,15 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    if (self.index % 10 == 0) {
+    if (self.index % 12 == 0) {
         NSString *text = @"";
         if (self.rulerConfig.isDecimal) {
-            NSInteger showIndex = self.index/10 + self.rulerConfig.min;
+            NSInteger showIndex = self.index/12 + self.rulerConfig.min;
             if (self.rulerConfig.reverse) {
                 showIndex = self.rulerConfig.max - showIndex + self.rulerConfig.min;
                 text = [NSString stringWithFormat:@"%ld", showIndex];
             } else {
-                text = [NSString stringWithFormat:@"%ld", self.index/10 + self.rulerConfig.min];
+                text = [NSString stringWithFormat:@"%ld", self.index/12 + self.rulerConfig.min];
             }
         } else {
             NSInteger showIndex = self.index + self.rulerConfig.min;
